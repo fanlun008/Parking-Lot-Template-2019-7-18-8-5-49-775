@@ -1,6 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.1.6.RELEASE'
     id 'java'
+    id "org.flywaydb.flyway" version "5.2.4"
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -14,6 +15,25 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile group: 'org.flywaydb', name: 'flyway-core', version: '5.2.4'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'com.h2database:h2'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.0.0')
+    testCompile('org.junit.jupiter:junit-jupiter-params:5.0.0')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.0.0')
+    testCompile 'org.assertj:assertj-core:3.10.0'
+    testCompile 'org.mockito:mockito-core:2.+'
+
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.54'
+}
+
+flyway {
+    url = 'jdbc:h2:file:./h2/test'
+    user = 'sa'
 }
