@@ -19,8 +19,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import java.util.List;
 import java.util.UUID;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
@@ -76,6 +75,27 @@ public class ParkingControllerTest {
     }
 
     @Test
-    public void
+    public void should_should_detail_info_By_id() throws Exception {
+        Parkinglot parkinglot = new Parkinglot().setName(UUID.randomUUID().toString().substring(0,4))
+                .setCapacity(100).setPosition("chonqing");
+        Parkinglot save = repository.save(parkinglot);
+
+        String contentAsString = mockMvc.perform(get("/parkinglots/{id}", save.getId()))
+                .andReturn().getResponse().getContentAsString();
+        Parkinglot _jsonObject = JSON.parseObject(contentAsString, Parkinglot.class);
+        Assertions.assertEquals(parkinglot.getPosition(), _jsonObject.getPosition());
+    }
+
+    @Test
+    public void should_update_capacity_when_call_controller_updatecapacity() throws Exception {
+        Parkinglot parkinglot = new Parkinglot().setName(UUID.randomUUID().toString().substring(0,4))
+                .setCapacity(100).setPosition("chonqing");
+        Parkinglot save = repository.save(parkinglot);
+        String capacity = mockMvc.perform(
+                put("/parkinglots/{id}", save.getId()).param("capacity", "111")
+        ).andReturn().getResponse().getContentAsString();
+        Parkinglot parkinglot1 = JSON.parseObject(capacity, Parkinglot.class);
+        Assertions.assertSame(111, parkinglot1.getCapacity().intValue());
+    }
 
 }
