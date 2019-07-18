@@ -2214,3 +2214,444 @@ org.springframework.dao.EmptyResultDataAccessException: No class com.thoughtwork
 2019-07-18 20:20:32.987  INFO 71656 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.021s)
 2019-07-18 20:20:33.005  INFO 71656 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1
 2019-07-18 20:20:33.006  INFO 71656 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-18 20:20:34.058  INFO 71656 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 20:20:34.684 DEBUG 71656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-18 20:20:34.847  INFO 71656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 20:20:34.858 DEBUG 71656 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-18 20:20:34.900  WARN 71656 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-18 20:20:34.931 DEBUG 71656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-18 20:20:34.941 DEBUG 71656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-18 20:20:34.949 DEBUG 71656 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-18 20:20:35.178  INFO 71656 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 20:20:35.236  INFO 71656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-18 20:20:35.238  INFO 71656 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 6.697 seconds (JVM running for 7.161)
+2019-07-18 20:20:52.926  INFO 71656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-18 20:20:52.927  INFO 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-18 20:20:52.928 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-18 20:20:52.938 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-18 20:20:52.938  INFO 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-07-18 20:20:52.954 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=1&pageSize=4", parameters={masked}
+2019-07-18 20:20:52.963 DEBUG 71656 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 20:20:53.062 DEBUG 71656 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:20:53.062 DEBUG 71656 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-07-18 20:20:53.063 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:21:06.839 DEBUG 71656 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=0&pageSize=4", parameters={masked}
+2019-07-18 20:21:06.841 DEBUG 71656 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 20:21:06.850 DEBUG 71656 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:21:06.855 DEBUG 71656 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-07-18 20:21:06.856 DEBUG 71656 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:21:41.256 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/parkinglot", parameters={}
+2019-07-18 20:21:41.258 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-07-18 20:21:41.260 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-07-18 20:21:41.260 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2019-07-18 20:21:41.267 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2019-07-18 20:21:41.268 DEBUG 71656 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-18 20:21:41.277 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:21:41.278 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Jul 18 20:21:41 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-07-18 20:21:41.316 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2019-07-18 20:21:48.967 DEBUG 71656 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:21:48.967 DEBUG 71656 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:21:49.020 DEBUG 71656 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=J346, capacity=45, position=biejing)]
+2019-07-18 20:21:49.058 DEBUG 71656 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:21:49.058 DEBUG 71656 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c05080b640000, name=J346, capacity=45, position=biejing)]
+2019-07-18 20:21:49.061 DEBUG 71656 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:21:52.735 DEBUG 71656 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:21:52.735 DEBUG 71656 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:21:52.736 DEBUG 71656 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=J34666, capacity=45, position=biejing)]
+2019-07-18 20:21:52.739 DEBUG 71656 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:21:52.740 DEBUG 71656 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c050819e10001, name=J34666, capacity=45, position=biejing)]
+2019-07-18 20:21:52.741 DEBUG 71656 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:21:56.117 DEBUG 71656 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:21:56.118 DEBUG 71656 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:21:56.119 DEBUG 71656 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=J346666666, capacity=45, position=biejing)]
+2019-07-18 20:21:56.121 DEBUG 71656 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:21:56.121 DEBUG 71656 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c050827170002, name=J346666666, capacity=45, position=biejing)]
+2019-07-18 20:21:56.122 DEBUG 71656 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:21:59.888 DEBUG 71656 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:21:59.888 DEBUG 71656 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:21:59.889 DEBUG 71656 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=J346666654654666666, capacity=45, position=biejing)]
+2019-07-18 20:21:59.892 DEBUG 71656 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:21:59.892 DEBUG 71656 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c050835d20003, name=J346666654654666666, capacity=45, position=biej (truncated)...]
+2019-07-18 20:21:59.893 DEBUG 71656 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:22:04.820 DEBUG 71656 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:22:04.821 DEBUG 71656 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:22:04.822 DEBUG 71656 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=g346666654654666666, capacity=45, position=biejing)]
+2019-07-18 20:22:04.824 DEBUG 71656 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:22:04.824 DEBUG 71656 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c050849160004, name=g346666654654666666, capacity=45, position=biej (truncated)...]
+2019-07-18 20:22:04.825 DEBUG 71656 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:22:07.421 DEBUG 71656 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:22:07.422 DEBUG 71656 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:22:07.423 DEBUG 71656 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=g34666666, capacity=45, position=biejing)]
+2019-07-18 20:22:07.425 DEBUG 71656 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:22:07.425 DEBUG 71656 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c0508533f0005, name=g34666666, capacity=45, position=biejing)]
+2019-07-18 20:22:07.426 DEBUG 71656 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:22:11.484 DEBUG 71656 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:22:11.485 DEBUG 71656 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:22:11.486 DEBUG 71656 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=g04666666, capacity=45, position=biejing)]
+2019-07-18 20:22:11.488 DEBUG 71656 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:22:11.488 DEBUG 71656 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=8a5e9d3e6c0506e5016c0508631f0006, name=g04666666, capacity=45, position=biejing)]
+2019-07-18 20:22:11.489 DEBUG 71656 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:22:12.391 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/parkinglots", parameters={}
+2019-07-18 20:22:12.392 DEBUG 71656 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-18 20:22:12.393 DEBUG 71656 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=g04666666, capacity=45, position=biejing)]
+2019-07-18 20:22:12.396 ERROR 71656 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.PARKINGLOT(NAME) VALUES 13"; SQL statement:
+insert into parkinglot (capacity, name, position, id) values (?, ?, ?, ?) [23505-199]
+2019-07-18 20:22:12.398 ERROR 71656 --- [http-nio-8080-exec-1] o.h.i.ExceptionMapperStandardImpl        : HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-07-18 20:22:12.403 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.PARKINGLOT(NAME) VALUES 13"; SQL statement:
+insert into parkinglot (capacity, name, position, id) values (?, ?, ?, ?) [23505-199]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-07-18 20:22:12.410 ERROR 71656 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.PARKINGLOT(NAME) VALUES 13"; SQL statement:
+insert into parkinglot (capacity, name, position, id) values (?, ?, ?, ?) [23505-199]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_4 ON PUBLIC.PARKINGLOT(NAME) VALUES 13"; SQL statement:
+insert into parkinglot (capacity, name, position, id) values (?, ?, ?, ?) [23505-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:103) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:220) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:196) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:546) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:180) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.dml.Insert.update(Insert.java:132) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Command.executeUpdate(Command.java:267) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:154) ~[h2-1.4.199.jar:1.4.199]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3176) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3690) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:90) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:356) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2486) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:532) ~[spring-orm-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746) ~[spring-tx-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714) ~[spring-tx-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:534) ~[spring-tx-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:305) ~[spring-tx-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:138) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at com.sun.proxy.$Proxy111.save(Unknown Source) ~[na:na]
+	at com.thoughtworks.parking_lot.service.ParkingService.saveParkinglot(ParkingService.java:21) ~[classes/:na]
+	at com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(ParkController.java:19) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88) ~[spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114) ~[spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104) ~[spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-07-18 20:22:12.411 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2019-07-18 20:22:12.412 DEBUG 71656 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-18 20:22:12.412 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:22:12.412 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Jul 18 20:22:12 CST 2019, status=500, error=Internal Server Error, message=could not  (truncated)...]
+2019-07-18 20:22:12.414 DEBUG 71656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2019-07-18 20:22:24.711 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=0&pageSize=4", parameters={masked}
+2019-07-18 20:22:24.712 DEBUG 71656 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 20:22:24.715 DEBUG 71656 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:22:24.716 DEBUG 71656 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-07-18 20:22:24.716 DEBUG 71656 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 20:22:35.923 DEBUG 71656 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=0&pageSize=10", parameters={masked}
+2019-07-18 20:22:35.924 DEBUG 71656 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 20:22:35.927 DEBUG 71656 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 20:22:35.927 DEBUG 71656 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-07-18 20:22:35.927 DEBUG 71656 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 21:31:32.224  INFO 45120 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ZHA-ITA121-W10 with PID 45120 (D:\git-repo\fodajfojasodfjoasfosajfosdfoajsdofjoasjfosa\Parking-Lot-Template-2019-7-18-8-5-49-775\out\production\classes started by LIAN12 in D:\git-repo\fodajfojasodfjoasfosajfosdfoajsdofjoasjfosa\Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-18 21:31:32.227  INFO 45120 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-07-18 21:31:33.200  INFO 45120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-18 21:31:33.256  INFO 45120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2019-07-18 21:31:33.663  INFO 45120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c293d4e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 21:31:34.142  INFO 45120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-18 21:31:34.165  INFO 45120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-18 21:31:34.165  INFO 45120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 21:31:34.228  INFO 45120 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-18 21:31:34.228  INFO 45120 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-07-18 21:31:34.229  INFO 45120 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-18 21:31:34.229  INFO 45120 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-18 21:31:35.310  INFO 45120 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-07-18 21:31:35.437  INFO 45120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-18 21:31:35.438 DEBUG 45120 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-18 21:31:35.438  INFO 45120 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3149 ms
+2019-07-18 21:31:35.906  INFO 45120 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-18 21:31:35.914  INFO 45120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-18 21:31:36.097  INFO 45120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-18 21:31:36.103  INFO 45120 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-18 21:31:36.130  WARN 45120 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-18 21:31:36.183  INFO 45120 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.019s)
+2019-07-18 21:31:36.198  INFO 45120 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1
+2019-07-18 21:31:36.199  INFO 45120 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-18 21:31:37.268  INFO 45120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 21:31:37.876 DEBUG 45120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-18 21:31:38.019  INFO 45120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 21:31:38.028 DEBUG 45120 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-18 21:31:38.066  WARN 45120 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-18 21:31:38.099 DEBUG 45120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-18 21:31:38.110 DEBUG 45120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-18 21:31:38.120 DEBUG 45120 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-18 21:31:38.364  INFO 45120 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 21:31:38.430  INFO 45120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-18 21:31:38.431  INFO 45120 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 7.093 seconds (JVM running for 7.595)
+2019-07-18 21:31:56.693  INFO 45120 --- [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-18 21:31:56.693  INFO 45120 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-18 21:31:56.693 DEBUG 45120 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-18 21:31:56.708 DEBUG 45120 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-18 21:31:56.708  INFO 45120 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-07-18 21:31:56.712 DEBUG 45120 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=0&pageSize=10", parameters={masked}
+2019-07-18 21:31:56.721 DEBUG 45120 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 21:31:56.855 DEBUG 45120 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 21:31:56.856 DEBUG 45120 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=8a5e9d3e6c04d0d6016c04d13f440000, name=John's carlot, capacity=45, position=biejing), (truncated)...]
+2019-07-18 21:31:56.902 DEBUG 45120 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 21:32:35.556 DEBUG 45120 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=1&pageSize=10", parameters={masked}
+2019-07-18 21:32:35.558 DEBUG 45120 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 21:32:35.565 DEBUG 45120 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 21:32:35.566 DEBUG 45120 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=8a5e9d3e6c0506e5016c050849160004, name=g346666654654666666, capacity=45, position=bie (truncated)...]
+2019-07-18 21:32:35.567 DEBUG 45120 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 21:33:18.129  INFO 88384 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ZHA-ITA121-W10 with PID 88384 (D:\git-repo\fodajfojasodfjoasfosajfosdfoajsdofjoasjfosa\Parking-Lot-Template-2019-7-18-8-5-49-775\out\production\classes started by LIAN12 in D:\git-repo\fodajfojasodfjoasfosajfosdfoajsdofjoasjfosa\Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-18 21:33:18.132  INFO 88384 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-07-18 21:33:19.360  INFO 88384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-18 21:33:19.413  INFO 88384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 repository interfaces.
+2019-07-18 21:33:19.822  INFO 88384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78897197] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 21:33:20.303  INFO 88384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-18 21:33:20.376  INFO 88384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-18 21:33:20.377  INFO 88384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 21:33:20.387  INFO 88384 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-18 21:33:20.387  INFO 88384 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-07-18 21:33:20.387  INFO 88384 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-18 21:33:20.387  INFO 88384 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-18 21:33:21.461  INFO 88384 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-07-18 21:33:21.587  INFO 88384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-18 21:33:21.587 DEBUG 88384 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-18 21:33:21.587  INFO 88384 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3380 ms
+2019-07-18 21:33:22.044  INFO 88384 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-18 21:33:22.051  INFO 88384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-18 21:33:22.257  INFO 88384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-18 21:33:22.262  INFO 88384 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-18 21:33:22.291  WARN 88384 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-18 21:33:22.340  INFO 88384 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.019s)
+2019-07-18 21:33:22.355  INFO 88384 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1
+2019-07-18 21:33:22.356  INFO 88384 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-18 21:33:23.397  INFO 88384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 21:33:23.947 DEBUG 88384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-18 21:33:24.089  INFO 88384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 21:33:24.099 DEBUG 88384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-18 21:33:24.136  WARN 88384 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-18 21:33:24.169 DEBUG 88384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-18 21:33:24.180 DEBUG 88384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-18 21:33:24.190 DEBUG 88384 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-18 21:33:24.439  INFO 88384 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 21:33:24.509  INFO 88384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-18 21:33:24.510  INFO 88384 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 6.878 seconds (JVM running for 7.382)
+2019-07-18 21:33:31.220  INFO 88384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-18 21:33:31.221  INFO 88384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-18 21:33:31.222 DEBUG 88384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-18 21:33:31.236 DEBUG 88384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-18 21:33:31.236  INFO 88384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-07-18 21:33:31.254 DEBUG 88384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=1&pageSize=10", parameters={masked}
+2019-07-18 21:33:31.263 DEBUG 88384 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 21:33:31.367 DEBUG 88384 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 21:33:31.368 DEBUG 88384 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=8a5e9d3e6c04d0d6016c04d13f440000, name=John's carlot, capacity=45, position=biejing), (truncated)...]
+2019-07-18 21:33:31.416 DEBUG 88384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 21:33:34.942 DEBUG 88384 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=0&pageSize=10", parameters={masked}
+2019-07-18 21:33:34.943 DEBUG 88384 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-18 21:33:34.946 DEBUG 88384 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.IllegalArgumentException: Page index must not be less than zero!
+2019-07-18 21:33:34.953 ERROR 88384 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Page index must not be less than zero!] with root cause
+
+java.lang.IllegalArgumentException: Page index must not be less than zero!
+	at org.springframework.data.domain.AbstractPageRequest.<init>(AbstractPageRequest.java:46) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.domain.PageRequest.<init>(PageRequest.java:71) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.domain.PageRequest.<init>(PageRequest.java:43) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.thoughtworks.parking_lot.service.ParkingService.findAll(ParkingService.java:38) ~[classes/:na]
+	at com.thoughtworks.parking_lot.controller.ParkController.findAll(ParkController.java:31) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88) ~[spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114) ~[spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104) ~[spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.21.jar:9.0.21]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-07-18 21:33:34.957 DEBUG 88384 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=0&pageSize=10", parameters={masked}
+2019-07-18 21:33:34.959 DEBUG 88384 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-18 21:33:34.965 DEBUG 88384 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 21:33:34.965 DEBUG 88384 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Jul 18 21:33:34 CST 2019, status=500, error=Internal Server Error, message=Page index (truncated)...]
+2019-07-18 21:33:34.971 DEBUG 88384 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2019-07-18 21:35:07.189  INFO 91072 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ZHA-ITA121-W10 with PID 91072 (D:\git-repo\fodajfojasodfjoasfosajfosdfoajsdofjoasjfosa\Parking-Lot-Template-2019-7-18-8-5-49-775\out\production\classes started by LIAN12 in D:\git-repo\fodajfojasodfjoasfosajfosdfoajsdofjoasjfosa\Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-18 21:35:07.192  INFO 91072 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-07-18 21:35:08.547  INFO 91072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-18 21:35:08.608  INFO 91072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+2019-07-18 21:35:09.155  INFO 91072 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5dbd706] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 21:35:09.664  INFO 91072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-18 21:35:09.741  INFO 91072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-18 21:35:09.741  INFO 91072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 21:35:09.753  INFO 91072 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-18 21:35:09.753  INFO 91072 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-07-18 21:35:09.753  INFO 91072 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-18 21:35:09.754  INFO 91072 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-18 21:35:10.837  INFO 91072 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-07-18 21:35:10.976  INFO 91072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-18 21:35:10.977 DEBUG 91072 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-18 21:35:10.977  INFO 91072 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3723 ms
+2019-07-18 21:35:11.445  INFO 91072 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-18 21:35:11.451  INFO 91072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-18 21:35:11.653  INFO 91072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-18 21:35:11.657  INFO 91072 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-18 21:35:11.688  WARN 91072 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-18 21:35:11.747  INFO 91072 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.023s)
+2019-07-18 21:35:11.767  INFO 91072 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1
+2019-07-18 21:35:11.768  INFO 91072 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-18 21:35:12.811  INFO 91072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 21:35:13.353 DEBUG 91072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-18 21:35:13.499  INFO 91072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 21:35:13.508 DEBUG 91072 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-18 21:35:13.545  WARN 91072 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-18 21:35:13.576 DEBUG 91072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-07-18 21:35:13.588 DEBUG 91072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-18 21:35:13.599 DEBUG 91072 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-18 21:35:13.864  INFO 91072 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 21:35:13.928  INFO 91072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-18 21:35:13.929  INFO 91072 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 7.313 seconds (JVM running for 7.867)
+2019-07-18 21:35:31.058  INFO 91072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-18 21:35:31.059  INFO 91072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-18 21:35:31.059 DEBUG 91072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-18 21:35:31.075 DEBUG 91072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-18 21:35:31.076  INFO 91072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-07-18 21:35:31.094 DEBUG 91072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/parkinglots?page=1", parameters={masked}
+2019-07-18 21:35:31.102 DEBUG 91072 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer)
+2019-07-18 21:35:31.236 DEBUG 91072 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-18 21:35:31.237 DEBUG 91072 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=8a5e9d3e6c04d0d6016c04d13f440000, name=John's carlot, capacity=45, position=biejing), (truncated)...]
+2019-07-18 21:35:31.296 DEBUG 91072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

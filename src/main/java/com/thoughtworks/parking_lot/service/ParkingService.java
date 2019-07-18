@@ -1,5 +1,6 @@
 package com.thoughtworks.parking_lot.service;
 
+import com.google.common.collect.Lists;
 import com.thoughtworks.parking_lot.entity.Parkinglot;
 import com.thoughtworks.parking_lot.repo.ParkinglotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -34,10 +37,8 @@ public class ParkingService {
     public List<Parkinglot> findAll(Integer page, Integer pageSize) {
         Pageable pageable = new PageRequest(page, pageSize);
         Page<Parkinglot> all = parkinglotRepository.findAll(pageable);
-        all.forEach( parkinglot -> {
-            System.out.println(parkinglot.getName());
-        } );
-        return null;
+
+        return Lists.newArrayList(all.iterator());
     }
 
 }

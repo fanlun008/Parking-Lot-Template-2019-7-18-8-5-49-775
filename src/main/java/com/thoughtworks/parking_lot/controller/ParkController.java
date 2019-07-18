@@ -26,10 +26,12 @@ public class ParkController {
         return parkingService.deleteParkinglot(id);
     }
 
-    @GetMapping(params = {"page", "pageSize"})
-    public List<Parkinglot> findAll(@RequestParam("page")Integer page, @RequestParam("pageSize")Integer pageSize){
-        List<Parkinglot> all = parkingService.findAll(page, pageSize);
+    @GetMapping(params = {"page"})
+    public List<Parkinglot> findAll(@RequestParam("page")Integer page){
+        List<Parkinglot> all = parkingService.findAll(page-1, 15);
         return all;
     }
+
+
 
 }
