@@ -32,6 +32,15 @@ public class ParkController {
         return all;
     }
 
+    @GetMapping("/{id}")
+    public Parkinglot getDetailInfoById(@PathVariable("id")String id) {
+        Parkinglot parkinglot = parkingService.findById(id);
+        return parkinglot;
+    }
 
-
+    @PutMapping(value = "/{id}", params = {"capacity"})
+    public Parkinglot updateCapacity(@PathVariable("id") String id, @RequestParam("capacity")Integer capacity){
+        parkingService.updateCapacityById(id, capacity);
+        return parkingService.findById(id);
+    }
 }

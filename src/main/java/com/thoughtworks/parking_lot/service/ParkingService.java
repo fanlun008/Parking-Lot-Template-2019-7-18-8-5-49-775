@@ -9,10 +9,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import javax.transaction.Transactional;
+import java.util.*;
 
 @Service
 public class ParkingService {
@@ -40,5 +38,19 @@ public class ParkingService {
 
         return Lists.newArrayList(all.iterator());
     }
+
+    public Parkinglot findById(String id) {
+        Optional<Parkinglot> optionalParkinglot = parkinglotRepository.findById(id);
+        if (optionalParkinglot.isPresent()) {
+            return optionalParkinglot.get();
+        }
+        return null;
+    }
+
+    @Transactional
+    public void updateCapacityById(String id, Integer capacity) {
+        parkinglotRepository.updateCapacity(id, capacity);
+    }
+
 
 }
