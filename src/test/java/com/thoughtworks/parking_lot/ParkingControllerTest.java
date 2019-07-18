@@ -65,13 +65,12 @@ public class ParkingControllerTest {
 
     @Test
     public void should_show_limit_15_result_per_page_when_give_pageNum() throws Exception {
-        int size = Lists.newArrayList(repository.findAll()).size();
         String page = mockMvc.perform(
                 get("/parkinglots").param("page", "1")
         ).andExpect(status().isOk()).andReturn().getResponse().getContentAsString();
 
         List<Parkinglot> list = JSON.parseObject(page, List.class);
-        Assertions.assertSame(size, list.size());
+        Assertions.assertSame(15, list.size());
     }
 
     @Test
