@@ -24,18 +24,6 @@ public class OrderController {
     @Autowired
     private ParkingService parkingService;
 
-    @GetMapping("kk")
-    public Order add_test() {
-        Order order = new Order();
-        order.setCarNumber("B765");
-//        order.setCreateTime(new Date());
-        order.setLotName("Lot");
-        order.setStatus("OFF");
-        Order save = orderRepository.save(order);
-        System.out.println(save);
-        return save;
-    }
-
     @PostMapping("")
     public ApiResponse generateOrder(@RequestBody @Valid Order order) {
         Order saveOrder = orderService.generateOrder(order);

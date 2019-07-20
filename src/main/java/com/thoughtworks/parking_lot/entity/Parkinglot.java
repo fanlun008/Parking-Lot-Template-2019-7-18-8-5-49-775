@@ -31,4 +31,8 @@ public class Parkinglot {
     @Column
     private String position;
 
+    public Parkinglot(String name, Integer capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
 }

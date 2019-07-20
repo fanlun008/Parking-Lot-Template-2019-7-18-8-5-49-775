@@ -66,7 +66,7 @@ public class ParkingControllerTest {
     @Test
     public void should_show_limit_15_result_per_page_when_give_pageNum() throws Exception {
         String page = mockMvc.perform(
-                get("/parkinglots").param("page", "1")
+                get("/parkinglots").param("page", "1").param("pageSize", "")
         ).andExpect(status().isOk()).andReturn().getResponse().getContentAsString();
 
         List<Parkinglot> list = JSON.parseObject(page, List.class);

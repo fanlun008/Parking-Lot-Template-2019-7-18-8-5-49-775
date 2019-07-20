@@ -2328,3 +2328,1043 @@ update t_order set status='OFF', end_time=now where id=? [42122-199]
 2019-07-20 13:05:49.818  INFO 2516 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-07-20 13:05:49.822  INFO 2516 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-07-20 13:05:49.823  INFO 2516 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:17:35.176  INFO 2760 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on bogon with PID 2760 (/Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775/out/production/classes started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:17:35.179  INFO 2760 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-07-20 14:17:35.792  INFO 2760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:17:35.839  INFO 2760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
+2019-07-20 14:17:36.115  INFO 2760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8c84e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:17:36.287  INFO 2760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-20 14:17:36.302  INFO 2760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-20 14:17:36.302  INFO 2760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-20 14:17:36.378  INFO 2760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-20 14:17:36.378 DEBUG 2760 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-20 14:17:36.378  INFO 2760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1168 ms
+2019-07-20 14:17:36.764  INFO 2760 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:17:36.765  INFO 2760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:17:36.902  INFO 2760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:17:36.907  INFO 2760 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:17:36.932  WARN 2760 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:17:36.984  INFO 2760 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.020s)
+2019-07-20 14:17:36.999  INFO 2760 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:17:37.000  INFO 2760 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:17:38.027  INFO 2760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:17:38.451 DEBUG 2760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:17:38.567  INFO 2760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:17:38.578 DEBUG 2760 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:17:38.599  WARN 2760 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:17:38.626 DEBUG 2760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:17:38.634 DEBUG 2760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:17:38.642 DEBUG 2760 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:17:38.947  INFO 2760 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:17:39.014  INFO 2760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-20 14:17:39.016  INFO 2760 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 4.146 seconds (JVM running for 7.6)
+2019-07-20 14:21:45.352  INFO 2760 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:21:45.353  INFO 2760 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:21:45.357  INFO 2760 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:21:45.358  INFO 2760 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:21:52.863  INFO 2766 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on bogon with PID 2766 (/Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775/out/production/classes started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:21:52.866  INFO 2766 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-07-20 14:21:53.503  INFO 2766 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:21:53.568  INFO 2766 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
+2019-07-20 14:21:53.848  INFO 2766 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc801981] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:21:54.055  INFO 2766 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-20 14:21:54.074  INFO 2766 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-20 14:21:54.074  INFO 2766 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-20 14:21:54.164  INFO 2766 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-20 14:21:54.164 DEBUG 2766 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-20 14:21:54.164  INFO 2766 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1271 ms
+2019-07-20 14:21:54.616  INFO 2766 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:21:54.618  INFO 2766 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:21:54.724  INFO 2766 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:21:54.728  INFO 2766 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:21:54.751  WARN 2766 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:21:54.797  INFO 2766 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.016s)
+2019-07-20 14:21:54.811  INFO 2766 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:21:54.812  INFO 2766 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:21:55.637  INFO 2766 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:21:56.050 DEBUG 2766 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:21:56.170  INFO 2766 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:21:56.184 DEBUG 2766 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:21:56.202  WARN 2766 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:21:56.229 DEBUG 2766 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:21:56.394 DEBUG 2766 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:21:56.404 DEBUG 2766 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:21:56.586  INFO 2766 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:21:56.661  INFO 2766 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-20 14:21:56.663  INFO 2766 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 4.122 seconds (JVM running for 4.626)
+2019-07-20 14:22:07.206  INFO 2766 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:22:07.208  INFO 2766 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:22:07.213  INFO 2766 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:22:07.215  INFO 2766 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:22:22.029  INFO 2771 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2771 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:22:22.030  INFO 2771 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 14:22:22.047 DEBUG 2771 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7bb3a9fe
+2019-07-20 14:22:22.868  INFO 2771 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:22:22.935  INFO 2771 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 2 repository interfaces.
+2019-07-20 14:22:23.441  INFO 2771 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fcc914b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:22:23.630  INFO 2771 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:22:23.640  INFO 2771 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:22:23.892  INFO 2771 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:22:23.896  INFO 2771 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:22:23.922  WARN 2771 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:22:23.970  INFO 2771 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.023s)
+2019-07-20 14:22:23.983  INFO 2771 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:22:23.984  INFO 2771 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:22:25.238  INFO 2771 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:22:26.188 DEBUG 2771 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:22:26.622  INFO 2771 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:22:26.642 DEBUG 2771 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:22:26.683  WARN 2771 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:22:26.735 DEBUG 2771 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:22:26.761 DEBUG 2771 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:22:26.773 DEBUG 2771 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:22:27.568  INFO 2771 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 14:22:27.569  INFO 2771 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 14:22:27.592  INFO 2771 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:22:27.666  INFO 2771 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 97 ms
+2019-07-20 14:22:27.727  INFO 2771 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 6.098 seconds (JVM running for 7.031)
+2019-07-20 14:22:27.899 DEBUG 2771 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 14:22:27.992 DEBUG 2771 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=d7168, carNumber=粤D7652, createTime=Sat Jul 20 14:22:27 CST 2019, endTime=nul (truncated)...]
+2019-07-20 14:22:39.254 DEBUG 2771 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 14:22:39.255 DEBUG 2771 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e0bb7016c0e0be70e0001, lotName=d7168, c (truncated)...]
+2019-07-20 14:23:24.616  WARN 2771 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m620ms).
+2019-07-20 14:23:24.628 DEBUG 2771 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7bb3a9fe, started on Sat Jul 20 14:22:22 CST 2019
+2019-07-20 14:23:24.641  INFO 2771 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:23:24.650  INFO 2771 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:23:24.660  INFO 2771 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:23:24.676  INFO 2771 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:28:10.854  INFO 2789 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2789 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:28:10.855  INFO 2789 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 14:28:10.867 DEBUG 2789 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@638ef7ed
+2019-07-20 14:28:11.490  INFO 2789 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:28:11.547  INFO 2789 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
+2019-07-20 14:28:11.963  INFO 2789 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$efb1b205] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:28:12.118  INFO 2789 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:28:12.123  INFO 2789 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:28:12.335  INFO 2789 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:28:12.340  INFO 2789 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:28:12.365  WARN 2789 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:28:12.403  INFO 2789 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 14:28:12.416  INFO 2789 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:28:12.417  INFO 2789 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:28:13.356  INFO 2789 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:28:14.173 DEBUG 2789 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:28:14.518  INFO 2789 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:28:14.535 DEBUG 2789 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:28:14.570  WARN 2789 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:28:14.608 DEBUG 2789 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:28:14.626 DEBUG 2789 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:28:14.636 DEBUG 2789 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:28:15.232  INFO 2789 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 14:28:15.232  INFO 2789 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 14:28:15.247  INFO 2789 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:28:15.276  INFO 2789 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 44 ms
+2019-07-20 14:28:15.319  INFO 2789 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 7.768 seconds (JVM running for 8.544)
+2019-07-20 14:28:15.425 DEBUG 2789 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 14:28:15.499 DEBUG 2789 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=b971a, carNumber=粤D7652, createTime=Sat Jul 20 14:28:15 CST 2019, endTime=nul (truncated)...]
+2019-07-20 14:28:15.589 DEBUG 2789 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 14:28:15.590 DEBUG 2789 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e1108016c0e1112520001, lotName=b971a, c (truncated)...]
+2019-07-20 14:28:15.697 DEBUG 2789 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@638ef7ed, started on Sat Jul 20 14:28:10 CST 2019
+2019-07-20 14:28:15.700  INFO 2789 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:28:15.702  INFO 2789 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:28:15.704  INFO 2789 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:28:15.706  INFO 2789 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:28:52.846  INFO 2793 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2793 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:28:52.848  INFO 2793 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 14:28:52.860 DEBUG 2793 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0
+2019-07-20 14:28:53.627  INFO 2793 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:28:53.682  INFO 2793 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2019-07-20 14:28:54.095  INFO 2793 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11b11510] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:28:54.257  INFO 2793 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:28:54.262  INFO 2793 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:28:54.463  INFO 2793 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:28:54.468  INFO 2793 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:28:54.490  WARN 2793 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:28:54.530  INFO 2793 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 14:28:54.543  INFO 2793 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:28:54.544  INFO 2793 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:28:55.542  INFO 2793 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:28:56.361 DEBUG 2793 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:28:56.688  INFO 2793 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:28:56.703 DEBUG 2793 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:28:56.734  WARN 2793 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:28:56.772 DEBUG 2793 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:28:56.789 DEBUG 2793 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:28:56.799 DEBUG 2793 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:28:57.432  INFO 2793 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 14:28:57.432  INFO 2793 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 14:28:57.450  INFO 2793 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:28:57.484  INFO 2793 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 52 ms
+2019-07-20 14:28:57.536  INFO 2793 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 5.074 seconds (JVM running for 5.786)
+2019-07-20 14:28:57.676 DEBUG 2793 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 14:28:57.746 DEBUG 2793 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=e5882, carNumber=粤D7652, createTime=Sat Jul 20 14:28:57 CST 2019, endTime=nul (truncated)...]
+2019-07-20 14:28:57.837 DEBUG 2793 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 14:28:57.837 DEBUG 2793 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e11ac016c0e11b7580001, lotName=e5882, c (truncated)...]
+2019-07-20 14:28:57.938 DEBUG 2793 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0, started on Sat Jul 20 14:28:52 CST 2019
+2019-07-20 14:28:57.940  INFO 2793 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:28:57.944  INFO 2793 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:28:57.946  INFO 2793 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:28:57.948  INFO 2793 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:55:32.489  INFO 2834 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2834 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:55:32.490  INFO 2834 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 14:55:32.501 DEBUG 2834 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0
+2019-07-20 14:55:33.148  INFO 2834 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:55:33.204  INFO 2834 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 repository interfaces.
+2019-07-20 14:55:33.648  INFO 2834 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c6e0ecd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:55:33.812  INFO 2834 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:55:33.818  INFO 2834 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:55:34.038  INFO 2834 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:55:34.042  INFO 2834 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:55:34.065  WARN 2834 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:55:34.105  INFO 2834 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 14:55:34.119  INFO 2834 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:55:34.120  INFO 2834 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:55:35.078  INFO 2834 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:55:35.923 DEBUG 2834 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:55:36.256  INFO 2834 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:55:36.271 DEBUG 2834 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:55:36.304  WARN 2834 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:55:36.340 DEBUG 2834 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:55:36.361 DEBUG 2834 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:55:36.373 DEBUG 2834 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:55:36.991  INFO 2834 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 14:55:36.991  INFO 2834 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 14:55:37.008  INFO 2834 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:55:37.035  INFO 2834 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 44 ms
+2019-07-20 14:55:37.076  INFO 2834 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 7.932 seconds (JVM running for 8.65)
+2019-07-20 14:55:37.199 DEBUG 2834 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.closeOrder(java.lang.String)
+2019-07-20 14:55:37.286 DEBUG 2834 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 14:55:37.286 DEBUG 2834 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=OK, result=null)]
+2019-07-20 14:55:37.378 DEBUG 2834 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0, started on Sat Jul 20 14:55:32 CST 2019
+2019-07-20 14:55:37.381  INFO 2834 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:55:37.384  INFO 2834 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:55:37.385  INFO 2834 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:55:37.388  INFO 2834 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:55:55.582  INFO 2837 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2837 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:55:55.584  INFO 2837 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 14:55:55.605 DEBUG 2837 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23
+2019-07-20 14:55:56.383  INFO 2837 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:55:56.439  INFO 2837 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
+2019-07-20 14:55:56.860  INFO 2837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d70aea31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:55:57.015  INFO 2837 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:55:57.021  INFO 2837 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:55:57.230  INFO 2837 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:55:57.234  INFO 2837 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:55:57.260  WARN 2837 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:55:57.297  INFO 2837 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.013s)
+2019-07-20 14:55:57.308  INFO 2837 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:55:57.309  INFO 2837 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:55:58.302  INFO 2837 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:55:59.124 DEBUG 2837 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:55:59.470  INFO 2837 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:55:59.485 DEBUG 2837 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:55:59.517  WARN 2837 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:55:59.561 DEBUG 2837 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:55:59.579 DEBUG 2837 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:55:59.590 DEBUG 2837 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:56:00.213  INFO 2837 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 14:56:00.213  INFO 2837 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 14:56:00.230  INFO 2837 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:56:00.265  INFO 2837 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 52 ms
+2019-07-20 14:56:00.310  INFO 2837 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 5.296 seconds (JVM running for 6.053)
+2019-07-20 14:56:00.451 DEBUG 2837 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.closeOrder(java.lang.String)
+2019-07-20 14:56:00.532 DEBUG 2837 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 14:56:00.532 DEBUG 2837 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=OK, result=null)]
+2019-07-20 14:56:00.618 DEBUG 2837 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23, started on Sat Jul 20 14:55:55 CST 2019
+2019-07-20 14:56:00.621  INFO 2837 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:56:00.623  INFO 2837 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:56:00.625  INFO 2837 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:56:00.627  INFO 2837 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 14:56:11.204  INFO 2840 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2840 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 14:56:11.206  INFO 2840 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 14:56:11.243 DEBUG 2840 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23
+2019-07-20 14:56:12.455  INFO 2840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 14:56:12.530  INFO 2840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 2 repository interfaces.
+2019-07-20 14:56:12.954  INFO 2840 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a1d87b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 14:56:13.122  INFO 2840 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 14:56:13.127  INFO 2840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 14:56:13.347  INFO 2840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 14:56:13.351  INFO 2840 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 14:56:13.375  WARN 2840 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 14:56:13.414  INFO 2840 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 14:56:13.427  INFO 2840 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 14:56:13.428  INFO 2840 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 14:56:14.433  INFO 2840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:56:15.264 DEBUG 2840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 14:56:15.610  INFO 2840 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:56:15.625 DEBUG 2840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 14:56:15.658  WARN 2840 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 14:56:15.695 DEBUG 2840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 14:56:15.714 DEBUG 2840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 14:56:15.724 DEBUG 2840 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 14:56:16.349  INFO 2840 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 14:56:16.349  INFO 2840 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 14:56:16.363  INFO 2840 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 14:56:16.388  INFO 2840 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 39 ms
+2019-07-20 14:56:16.427  INFO 2840 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 5.656 seconds (JVM running for 6.372)
+2019-07-20 14:56:16.541 DEBUG 2840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 14:56:16.621 DEBUG 2840 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=db52e, carNumber=粤D7652, createTime=Sat Jul 20 14:56:16 CST 2019, endTime=nul (truncated)...]
+2019-07-20 14:56:16.725 DEBUG 2840 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 14:56:16.725 DEBUG 2840 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e2aae016c0e2ab9410001, lotName=db52e, c (truncated)...]
+2019-07-20 14:56:16.821 DEBUG 2840 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23, started on Sat Jul 20 14:56:11 CST 2019
+2019-07-20 14:56:16.825  INFO 2840 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 14:56:16.828  INFO 2840 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 14:56:16.829  INFO 2840 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 14:56:16.831  INFO 2840 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:05:38.678  INFO 2866 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2866 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:05:38.680  INFO 2866 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:05:38.691 DEBUG 2866 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23
+2019-07-20 15:05:39.425  INFO 2866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:05:39.482  INFO 2866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 repository interfaces.
+2019-07-20 15:05:39.906  INFO 2866 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88982566] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:05:40.065  INFO 2866 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:05:40.071  INFO 2866 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:05:40.343  INFO 2866 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:05:40.347  INFO 2866 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:05:40.372  WARN 2866 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:05:40.413  INFO 2866 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 15:05:40.425  INFO 2866 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:05:40.426  INFO 2866 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:05:41.700  INFO 2866 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:05:42.540 DEBUG 2866 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:05:42.892  INFO 2866 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:05:42.908 DEBUG 2866 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:05:42.945  WARN 2866 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:05:42.989 DEBUG 2866 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:05:43.006 DEBUG 2866 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:05:43.018 DEBUG 2866 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:05:43.625  INFO 2866 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:05:43.626  INFO 2866 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:05:43.640  INFO 2866 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:05:43.666  INFO 2866 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 40 ms
+2019-07-20 15:05:43.708  INFO 2866 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 8.39 seconds (JVM running for 9.129)
+2019-07-20 15:05:43.852 DEBUG 2866 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:05:43.939 DEBUG 2866 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=fb8f5, carNumber=粤D7652, createTime=Sat Jul 20 15:05:43 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:05:44.015 DEBUG 2866 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:05:44.015 DEBUG 2866 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e3356016c0e33613d0002, lotName=fb8f5, c (truncated)...]
+2019-07-20 15:05:44.137 DEBUG 2866 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23, started on Sat Jul 20 15:05:38 CST 2019
+2019-07-20 15:05:44.140  INFO 2866 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:05:44.144  INFO 2866 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:05:44.146  INFO 2866 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:05:44.164  INFO 2866 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:08:40.118  INFO 2871 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2871 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:08:40.119  INFO 2871 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:08:40.129 DEBUG 2871 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23
+2019-07-20 15:08:40.757  INFO 2871 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:08:40.815  INFO 2871 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
+2019-07-20 15:08:41.238  INFO 2871 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13bec197] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:08:41.397  INFO 2871 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:08:41.402  INFO 2871 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:08:41.607  INFO 2871 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:08:41.611  INFO 2871 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:08:41.636  WARN 2871 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:08:41.674  INFO 2871 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:08:41.686  INFO 2871 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:08:41.687  INFO 2871 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:08:42.604  INFO 2871 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:08:43.428 DEBUG 2871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:08:43.758  INFO 2871 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:08:43.773 DEBUG 2871 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:08:43.803  WARN 2871 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:08:43.845 DEBUG 2871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:08:43.868 DEBUG 2871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:08:43.879 DEBUG 2871 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:08:44.492  INFO 2871 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:08:44.492  INFO 2871 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:08:44.507  INFO 2871 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:08:44.531  INFO 2871 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 39 ms
+2019-07-20 15:08:44.570  INFO 2871 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 7.784 seconds (JVM running for 8.473)
+2019-07-20 15:08:44.703 DEBUG 2871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:08:44.778 DEBUG 2871 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=78a3e, carNumber=粤D7652, createTime=Sat Jul 20 15:08:44 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:08:44.849 DEBUG 2871 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:08:44.850 DEBUG 2871 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e3619016c0e3623a20002, lotName=78a3e, c (truncated)...]
+2019-07-20 15:08:44.958 DEBUG 2871 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23, started on Sat Jul 20 15:08:40 CST 2019
+2019-07-20 15:08:44.961  INFO 2871 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:08:44.965  INFO 2871 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:08:44.967  INFO 2871 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:08:44.970  INFO 2871 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:13:11.008  INFO 2876 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2876 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:13:11.010  INFO 2876 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:13:11.027 DEBUG 2876 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d78795
+2019-07-20 15:13:11.792  INFO 2876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:13:11.861  INFO 2876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 2 repository interfaces.
+2019-07-20 15:13:12.343  INFO 2876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$14c348e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:13:12.529  INFO 2876 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:13:12.534  INFO 2876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:13:12.784  INFO 2876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:13:12.789  INFO 2876 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:13:12.818  WARN 2876 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:13:12.872  INFO 2876 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.022s)
+2019-07-20 15:13:12.886  INFO 2876 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:13:12.887  INFO 2876 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:13:14.208  INFO 2876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:13:15.215 DEBUG 2876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:13:15.634  INFO 2876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:13:15.654 DEBUG 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:13:15.697  WARN 2876 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:13:15.746 DEBUG 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:13:15.768 DEBUG 2876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:13:15.783 DEBUG 2876 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:13:16.580  INFO 2876 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:13:16.581  INFO 2876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:13:16.620  INFO 2876 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:13:16.666  INFO 2876 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 85 ms
+2019-07-20 15:13:16.727  INFO 2876 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 6.044 seconds (JVM running for 6.864)
+2019-07-20 15:13:16.925 DEBUG 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:13:16.996 DEBUG 2876 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=72bc3, carNumber=粤D7652, createTime=Sat Jul 20 15:13:16 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:14:18.854  WARN 2876 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s970ms).
+2019-07-20 15:14:21.702 DEBUG 2876 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:14:21.703 DEBUG 2876 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e3a3d016c0e3b3c660002, lotName=72bc3, c (truncated)...]
+2019-07-20 15:14:21.840 DEBUG 2876 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d78795, started on Sat Jul 20 15:13:11 CST 2019
+2019-07-20 15:14:21.843  INFO 2876 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:14:21.846  INFO 2876 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:14:21.848  INFO 2876 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:14:21.850  INFO 2876 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:16:22.370  INFO 2881 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2881 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:16:22.372  INFO 2881 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:16:22.382 DEBUG 2881 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23
+2019-07-20 15:16:23.014  INFO 2881 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:16:23.073  INFO 2881 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
+2019-07-20 15:16:23.485  INFO 2881 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13bec197] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:16:23.643  INFO 2881 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:16:23.649  INFO 2881 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:16:23.854  INFO 2881 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:16:23.858  INFO 2881 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:16:23.883  WARN 2881 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:16:23.921  INFO 2881 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:16:23.934  INFO 2881 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:16:23.934  INFO 2881 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:16:24.845  INFO 2881 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:16:25.667 DEBUG 2881 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:16:25.995  INFO 2881 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:16:26.011 DEBUG 2881 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:16:26.045  WARN 2881 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:16:26.086 DEBUG 2881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:16:26.107 DEBUG 2881 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:16:26.118 DEBUG 2881 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:16:26.677  INFO 2881 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:16:26.677  INFO 2881 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:16:26.690  INFO 2881 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:16:26.717  INFO 2881 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 40 ms
+2019-07-20 15:16:26.756  INFO 2881 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 7.701 seconds (JVM running for 8.413)
+2019-07-20 15:16:26.892 DEBUG 2881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:16:26.968 DEBUG 2881 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=da92d, carNumber=粤D7652, createTime=Sat Jul 20 15:16:26 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:16:27.041 DEBUG 2881 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:16:27.042 DEBUG 2881 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e3d27016c0e3d31100002, lotName=da92d, c (truncated)...]
+2019-07-20 15:16:27.061 DEBUG 2881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:16:27.061 DEBUG 2881 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=da92d, carNumber=粤D7652, createTime=Sat Jul 20 15:16:27 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:16:27.065 DEBUG 2881 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleParkingLotException(com.thoughtworks.parking_lot.ParkingLotException)
+2019-07-20 15:16:27.066 DEBUG 2881 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:16:27.066 DEBUG 2881 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=400, msg=没有足够停车位, result=null)]
+2019-07-20 15:16:27.066 DEBUG 2881 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.thoughtworks.parking_lot.ParkingLotException: 没有足够停车位]
+2019-07-20 15:16:27.160 DEBUG 2881 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23, started on Sat Jul 20 15:16:22 CST 2019
+2019-07-20 15:16:27.163  INFO 2881 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:16:27.166  INFO 2881 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:16:27.167  INFO 2881 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:16:27.172  INFO 2881 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:18:51.562  INFO 2888 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2888 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:18:51.563  INFO 2888 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:18:51.574 DEBUG 2888 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23
+2019-07-20 15:18:52.218  INFO 2888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:18:52.274  INFO 2888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 repository interfaces.
+2019-07-20 15:18:52.692  INFO 2888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13bec197] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:18:52.846  INFO 2888 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:18:52.851  INFO 2888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:18:53.063  INFO 2888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:18:53.068  INFO 2888 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:18:53.092  WARN 2888 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:18:53.130  INFO 2888 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:18:53.144  INFO 2888 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:18:53.144  INFO 2888 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:18:54.066  INFO 2888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:18:54.874 DEBUG 2888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:18:55.198  INFO 2888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:18:55.213 DEBUG 2888 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:18:55.244  WARN 2888 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:18:55.287 DEBUG 2888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:18:55.308 DEBUG 2888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:18:55.320 DEBUG 2888 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:18:55.892  INFO 2888 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:18:55.892  INFO 2888 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:18:55.907  INFO 2888 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:18:55.933  INFO 2888 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 41 ms
+2019-07-20 15:18:55.975  INFO 2888 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 7.742 seconds (JVM running for 8.439)
+2019-07-20 15:18:56.101 DEBUG 2888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:18:56.180 DEBUG 2888 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=1188a, carNumber=粤D7652, createTime=Sat Jul 20 15:18:56 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:18:56.238 DEBUG 2888 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleParkingLotException(com.thoughtworks.parking_lot.ParkingLotException)
+2019-07-20 15:18:56.253 DEBUG 2888 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:18:56.254 DEBUG 2888 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=400, msg=没有足够停车位, result=null)]
+2019-07-20 15:18:56.261 DEBUG 2888 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.thoughtworks.parking_lot.ParkingLotException: 没有足够停车位]
+2019-07-20 15:18:56.347 DEBUG 2888 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3f1d2e23, started on Sat Jul 20 15:18:51 CST 2019
+2019-07-20 15:18:56.350  INFO 2888 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:18:56.353  INFO 2888 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:18:56.355  INFO 2888 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:18:56.359  INFO 2888 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:19:19.390  INFO 2891 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2891 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:19:19.391  INFO 2891 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:19:19.406 DEBUG 2891 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62656be4
+2019-07-20 15:19:20.212  INFO 2891 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:19:20.267  INFO 2891 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 repository interfaces.
+2019-07-20 15:19:20.692  INFO 2891 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88102825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:19:20.868  INFO 2891 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:19:20.874  INFO 2891 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:19:21.129  INFO 2891 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:19:21.134  INFO 2891 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:19:21.159  WARN 2891 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:19:21.205  INFO 2891 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.019s)
+2019-07-20 15:19:21.217  INFO 2891 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:19:21.218  INFO 2891 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:19:22.261  INFO 2891 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:19:23.063 DEBUG 2891 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:19:23.378  INFO 2891 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:19:23.394 DEBUG 2891 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:19:23.429  WARN 2891 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:19:23.466 DEBUG 2891 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:19:23.484 DEBUG 2891 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:19:23.494 DEBUG 2891 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:19:24.104  INFO 2891 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:19:24.104  INFO 2891 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:19:24.126  INFO 2891 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:19:24.161  INFO 2891 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 56 ms
+2019-07-20 15:19:24.209  INFO 2891 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 5.202 seconds (JVM running for 5.902)
+2019-07-20 15:19:24.352 DEBUG 2891 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:19:24.433 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=42b20, carNumber=粤D7652, createTime=Sat Jul 20 15:19:24 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:19:24.500 DEBUG 2891 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleParkingLotException(com.thoughtworks.parking_lot.ParkingLotException)
+2019-07-20 15:19:24.516 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:19:24.516 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=400, msg=没有足够停车位, result=null)]
+2019-07-20 15:19:24.524 DEBUG 2891 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.thoughtworks.parking_lot.ParkingLotException: 没有足够停车位]
+2019-07-20 15:19:24.635 DEBUG 2891 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:19:24.636 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=2152a, carNumber=粤D7652, createTime=Sat Jul 20 15:19:24 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:19:24.643 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:19:24.643 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e3fdb016c0e3fe6df0004, lotName=2152a, c (truncated)...]
+2019-07-20 15:19:24.661 DEBUG 2891 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.closeOrder(java.lang.String)
+2019-07-20 15:19:24.680 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:19:24.681 DEBUG 2891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=OK, result=null)]
+2019-07-20 15:19:24.700 DEBUG 2891 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@62656be4, started on Sat Jul 20 15:19:19 CST 2019
+2019-07-20 15:19:24.705  INFO 2891 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:19:24.707  INFO 2891 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:19:24.709  INFO 2891 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:19:24.711  INFO 2891 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:19:59.148  INFO 2897 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2897 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:19:59.150  INFO 2897 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:19:59.170 DEBUG 2897 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@376a0d86
+2019-07-20 15:20:00.430  INFO 2897 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:20:00.495  INFO 2897 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 2 repository interfaces.
+2019-07-20 15:20:00.945  INFO 2897 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$33d9c0f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:20:01.113  INFO 2897 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:20:01.119  INFO 2897 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:20:01.337  INFO 2897 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:20:01.342  INFO 2897 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:20:01.366  WARN 2897 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:20:01.404  INFO 2897 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:20:01.416  INFO 2897 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:20:01.417  INFO 2897 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:20:02.342  INFO 2897 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:20:03.099 DEBUG 2897 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:20:03.590  INFO 2897 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:20:03.605 DEBUG 2897 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:20:03.636  WARN 2897 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:20:03.676 DEBUG 2897 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:20:03.694 DEBUG 2897 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:20:03.704 DEBUG 2897 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:20:04.259  INFO 2897 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:20:04.260  INFO 2897 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:20:04.276  INFO 2897 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:20:04.303  INFO 2897 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 43 ms
+2019-07-20 15:20:04.342  INFO 2897 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 5.608 seconds (JVM running for 6.425)
+2019-07-20 15:20:04.473 DEBUG 2897 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:20:04.556 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=2a4a3, carNumber=粤D7652, createTime=Sat Jul 20 15:20:04 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:20:04.618 DEBUG 2897 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleParkingLotException(com.thoughtworks.parking_lot.ParkingLotException)
+2019-07-20 15:20:04.632 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:20:04.633 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=400, msg=没有足够停车位, result=null)]
+2019-07-20 15:20:04.640 DEBUG 2897 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.thoughtworks.parking_lot.ParkingLotException: 没有足够停车位]
+2019-07-20 15:20:04.731 DEBUG 2897 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:20:04.732 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=52b79, carNumber=粤D7652, createTime=Sat Jul 20 15:20:04 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:20:04.738 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:20:04.739 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=生成订单成功, result=Order(id=402881e56c0e4078016c0e4083800003, lotName=52b79, c (truncated)...]
+2019-07-20 15:20:04.756 DEBUG 2897 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.closeOrder(java.lang.String)
+2019-07-20 15:20:04.776 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:20:04.776 DEBUG 2897 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=200, msg=OK, result=null)]
+2019-07-20 15:20:04.782 DEBUG 2897 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@376a0d86, started on Sat Jul 20 15:19:59 CST 2019
+2019-07-20 15:20:04.786  INFO 2897 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:20:04.790  INFO 2897 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:20:04.791  INFO 2897 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:20:04.793  INFO 2897 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:20:26.112  INFO 2901 --- [main] com.thoughtworks.parking_lot.OrderTest   : Starting OrderTest on bogon with PID 2901 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:20:26.114  INFO 2901 --- [main] com.thoughtworks.parking_lot.OrderTest   : No active profile set, falling back to default profiles: default
+2019-07-20 15:20:26.124 DEBUG 2901 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@638ef7ed
+2019-07-20 15:20:26.757  INFO 2901 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:20:26.816  INFO 2901 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 2 repository interfaces.
+2019-07-20 15:20:27.236  INFO 2901 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$496afeee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:20:27.399  INFO 2901 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:20:27.405  INFO 2901 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:20:27.623  INFO 2901 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:20:27.628  INFO 2901 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:20:27.654  WARN 2901 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:20:27.695  INFO 2901 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 15:20:27.711  INFO 2901 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:20:27.712  INFO 2901 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:20:28.689  INFO 2901 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:20:29.525 DEBUG 2901 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:20:29.863  INFO 2901 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:20:29.879 DEBUG 2901 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:20:29.910  WARN 2901 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:20:29.949 DEBUG 2901 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:20:29.971 DEBUG 2901 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:20:29.982 DEBUG 2901 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:20:30.557  INFO 2901 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:20:30.557  INFO 2901 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:20:30.572  INFO 2901 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:20:30.599  INFO 2901 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 42 ms
+2019-07-20 15:20:30.641  INFO 2901 --- [main] com.thoughtworks.parking_lot.OrderTest   : Started OrderTest in 7.911 seconds (JVM running for 8.694)
+2019-07-20 15:20:30.764 DEBUG 2901 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.OrderController.generateOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-20 15:20:30.844 DEBUG 2901 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Order(id=null, lotName=85e2f, carNumber=粤D7652, createTime=Sat Jul 20 15:20:30 CST 2019, endTime=nul (truncated)...]
+2019-07-20 15:20:30.906 DEBUG 2901 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleParkingLotException(com.thoughtworks.parking_lot.ParkingLotException)
+2019-07-20 15:20:30.919 DEBUG 2901 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:20:30.920 DEBUG 2901 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=400, msg=没有足够停车位, result=null)]
+2019-07-20 15:20:30.927 DEBUG 2901 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.thoughtworks.parking_lot.ParkingLotException: 没有足够停车位]
+2019-07-20 15:20:31.011 DEBUG 2901 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@638ef7ed, started on Sat Jul 20 15:20:26 CST 2019
+2019-07-20 15:20:31.014  INFO 2901 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:20:31.017  INFO 2901 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:20:31.019  INFO 2901 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:20:31.023  INFO 2901 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:20:49.046  INFO 2904 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2904 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:20:49.048  INFO 2904 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:20:49.061 DEBUG 2904 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf
+2019-07-20 15:20:49.864  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:20:49.925  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 2 repository interfaces.
+2019-07-20 15:20:50.348  INFO 2904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d70aea31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:20:50.505  INFO 2904 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:20:50.510  INFO 2904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:20:50.720  INFO 2904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:20:50.725  INFO 2904 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:20:50.749  WARN 2904 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:20:50.787  INFO 2904 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:20:50.799  INFO 2904 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:20:50.799  INFO 2904 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:20:51.774  INFO 2904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:20:52.584 DEBUG 2904 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:20:52.912  INFO 2904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:20:52.929 DEBUG 2904 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:20:52.961  WARN 2904 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:20:53.003 DEBUG 2904 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:20:53.023 DEBUG 2904 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:20:53.034 DEBUG 2904 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:20:53.662  INFO 2904 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:20:53.662  INFO 2904 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:20:53.678  INFO 2904 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:20:53.710  INFO 2904 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 48 ms
+2019-07-20 15:20:53.767  INFO 2904 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 5.091 seconds (JVM running for 5.814)
+2019-07-20 15:20:53.836 DEBUG 2904 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-20 15:20:53.910 DEBUG 2904 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=addd, capacity=45, position=biejing12)]
+2019-07-20 15:20:53.985 DEBUG 2904 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:20:53.985 DEBUG 2904 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=402881e56c0e4139016c0e4143b20000, name=addd, capacity=45, position=biejing12)]
+2019-07-20 15:20:54.094 DEBUG 2904 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf, started on Sat Jul 20 15:20:49 CST 2019
+2019-07-20 15:20:54.097  INFO 2904 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:20:54.101  INFO 2904 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:20:54.102  INFO 2904 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:20:54.104  INFO 2904 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:20:59.051  INFO 2907 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2907 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:20:59.052  INFO 2907 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:20:59.066 DEBUG 2907 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf
+2019-07-20 15:20:59.841  INFO 2907 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:20:59.899  INFO 2907 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 2 repository interfaces.
+2019-07-20 15:21:00.300  INFO 2907 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e440a6a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:21:00.459  INFO 2907 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:21:00.465  INFO 2907 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:21:00.670  INFO 2907 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:21:00.675  INFO 2907 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:21:00.698  WARN 2907 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:21:00.736  INFO 2907 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.013s)
+2019-07-20 15:21:00.748  INFO 2907 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:21:00.749  INFO 2907 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:21:01.747  INFO 2907 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:21:02.558 DEBUG 2907 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:21:02.886  INFO 2907 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:21:02.905 DEBUG 2907 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:21:02.937  WARN 2907 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:21:02.975 DEBUG 2907 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:21:02.994 DEBUG 2907 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:21:03.004 DEBUG 2907 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:21:03.641  INFO 2907 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:21:03.641  INFO 2907 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:21:03.656  INFO 2907 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:21:03.682  INFO 2907 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 40 ms
+2019-07-20 15:21:03.721  INFO 2907 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 5.035 seconds (JVM running for 5.733)
+2019-07-20 15:21:03.820 DEBUG 2907 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.thoughtworks.parking_lot.controller.ParkController.deleteParkinglot(java.lang.String)
+2019-07-20 15:21:03.871 DEBUG 2907 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:21:03.871 DEBUG 2907 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing ["OK"]
+2019-07-20 15:21:03.888 DEBUG 2907 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf, started on Sat Jul 20 15:20:59 CST 2019
+2019-07-20 15:21:03.892  INFO 2907 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:21:03.896  INFO 2907 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:21:03.898  INFO 2907 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:21:03.901  INFO 2907 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:21:09.545  INFO 2910 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2910 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:21:09.547  INFO 2910 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:21:09.568 DEBUG 2910 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf
+2019-07-20 15:21:10.334  INFO 2910 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:21:10.387  INFO 2910 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 2 repository interfaces.
+2019-07-20 15:21:10.797  INFO 2910 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$373d1eed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:21:10.967  INFO 2910 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:21:10.973  INFO 2910 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:21:11.193  INFO 2910 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:21:11.197  INFO 2910 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:21:11.221  WARN 2910 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:21:11.260  INFO 2910 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:21:11.272  INFO 2910 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:21:11.272  INFO 2910 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:21:12.268  INFO 2910 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:21:13.097 DEBUG 2910 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:21:13.416  INFO 2910 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:21:13.435 DEBUG 2910 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:21:13.467  WARN 2910 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:21:13.507 DEBUG 2910 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:21:13.524 DEBUG 2910 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:21:13.535 DEBUG 2910 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:21:14.176  INFO 2910 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:21:14.176  INFO 2910 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:21:14.190  INFO 2910 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:21:14.217  INFO 2910 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 41 ms
+2019-07-20 15:21:14.255  INFO 2910 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 5.085 seconds (JVM running for 5.79)
+2019-07-20 15:21:14.326 DEBUG 2910 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleResponse(java.lang.Exception,javax.servlet.http.HttpServletRequest)
+2019-07-20 15:21:14.369 DEBUG 2910 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:21:14.370 DEBUG 2910 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=500, msg=Parameter conditions "page, pageSize" not met for actual request parameter (truncated)...]
+2019-07-20 15:21:14.379 DEBUG 2910 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.UnsatisfiedServletRequestParameterException: Parameter conditions "page, pageSize" not met for actual request parameters: page={1}]
+2019-07-20 15:21:14.466 DEBUG 2910 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf, started on Sat Jul 20 15:21:09 CST 2019
+2019-07-20 15:21:14.472  INFO 2910 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:21:14.477  INFO 2910 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:21:14.479  INFO 2910 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:21:14.481  INFO 2910 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:22:25.869  INFO 2914 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2914 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:22:25.871  INFO 2914 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:22:25.884 DEBUG 2914 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46074492
+2019-07-20 15:22:26.748  INFO 2914 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:22:26.812  INFO 2914 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2019-07-20 15:22:27.345  INFO 2914 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6f25d7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:22:27.536  INFO 2914 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:22:27.542  INFO 2914 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:22:27.820  INFO 2914 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:22:27.826  INFO 2914 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:22:27.855  WARN 2914 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:22:27.898  INFO 2914 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.016s)
+2019-07-20 15:22:27.911  INFO 2914 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:22:27.912  INFO 2914 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:22:29.200  INFO 2914 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:22:30.200 DEBUG 2914 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:22:30.613  INFO 2914 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:22:30.633 DEBUG 2914 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:22:30.671  WARN 2914 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:22:30.722 DEBUG 2914 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:22:30.747 DEBUG 2914 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:22:30.762 DEBUG 2914 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:22:31.574  INFO 2914 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:22:31.574  INFO 2914 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:22:31.597  INFO 2914 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:22:31.646  INFO 2914 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 71 ms
+2019-07-20 15:22:31.746  INFO 2914 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 6.211 seconds (JVM running for 7.01)
+2019-07-20 15:22:31.863 DEBUG 2914 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.controller.ApiResponse com.thoughtworks.parking_lot.controller.AppErrorControllerAdvice.handleResponse(java.lang.Exception,javax.servlet.http.HttpServletRequest)
+2019-07-20 15:22:31.914 DEBUG 2914 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:22:31.915 DEBUG 2914 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResponse(code=500, msg=Parameter conditions "page, pageSize" not met for actual request parameter (truncated)...]
+2019-07-20 15:22:31.927 DEBUG 2914 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.UnsatisfiedServletRequestParameterException: Parameter conditions "page, pageSize" not met for actual request parameters: page={1}]
+2019-07-20 15:24:42.224  WARN 2914 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m14s298ms).
+2019-07-20 15:24:42.280 DEBUG 2914 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46074492, started on Sat Jul 20 15:22:25 CST 2019
+2019-07-20 15:24:42.292  INFO 2914 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:24:42.298  INFO 2914 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:24:42.300  INFO 2914 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:24:42.302  INFO 2914 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:24:42.331  WARN 2914 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@11f0a5a1] for test method [public void com.thoughtworks.parking_lot.ParkingControllerTest.should_show_limit_15_result_per_page_when_give_pageNum() throws java.lang.Exception] and test instance [com.thoughtworks.parking_lot.ParkingControllerTest@f9919a2]
+
+java.lang.IllegalStateException: The ApplicationContext loaded for [[WebMergedContextConfiguration@8e50104 testClass = ParkingControllerTest, locations = '{}', classes = '{class com.thoughtworks.parking_lot.ParkingLotApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1431b91e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@59474f18, [ImportsContextCustomizer@37e4d7bb key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1573f9fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e6f74c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4116aac9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]] is not active. This may be due to one of the following reasons: 1) the context was closed programmatically by user code; 2) the context was closed during parallel test execution either according to @DirtiesContext semantics or due to automatic eviction from the ContextCache due to a maximum cache size policy.
+	at org.springframework.util.Assert.state(Assert.java:94) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:112) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:63) ~[spring-boot-test-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+
+2019-07-20 15:24:42.332  WARN 2914 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b45c0e] for test method [public void com.thoughtworks.parking_lot.ParkingControllerTest.should_show_limit_15_result_per_page_when_give_pageNum() throws java.lang.Exception] and test instance [com.thoughtworks.parking_lot.ParkingControllerTest@f9919a2]
+
+java.lang.IllegalStateException: The ApplicationContext loaded for [[WebMergedContextConfiguration@8e50104 testClass = ParkingControllerTest, locations = '{}', classes = '{class com.thoughtworks.parking_lot.ParkingLotApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1431b91e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@59474f18, [ImportsContextCustomizer@37e4d7bb key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1573f9fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e6f74c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4116aac9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]] is not active. This may be due to one of the following reasons: 1) the context was closed programmatically by user code; 2) the context was closed during parallel test execution either according to @DirtiesContext semantics or due to automatic eviction from the ContextCache due to a maximum cache size policy.
+	at org.springframework.util.Assert.state(Assert.java:94) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:112) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener.afterTestMethod(WebDriverTestExecutionListener.java:41) ~[spring-boot-test-autoconfigure-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+
+2019-07-20 15:24:42.333  WARN 2914 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5026735c] for test method [public void com.thoughtworks.parking_lot.ParkingControllerTest.should_show_limit_15_result_per_page_when_give_pageNum() throws java.lang.Exception] and test instance [com.thoughtworks.parking_lot.ParkingControllerTest@f9919a2]
+
+java.lang.IllegalStateException: The ApplicationContext loaded for [[WebMergedContextConfiguration@8e50104 testClass = ParkingControllerTest, locations = '{}', classes = '{class com.thoughtworks.parking_lot.ParkingLotApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1431b91e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@59474f18, [ImportsContextCustomizer@37e4d7bb key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1573f9fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e6f74c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4116aac9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]] is not active. This may be due to one of the following reasons: 1) the context was closed programmatically by user code; 2) the context was closed during parallel test execution either according to @DirtiesContext semantics or due to automatic eviction from the ContextCache due to a maximum cache size policy.
+	at org.springframework.util.Assert.state(Assert.java:94) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:112) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener.afterTestMethod(MockMvcPrintOnlyOnFailureTestExecutionListener.java:40) ~[spring-boot-test-autoconfigure-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+
+2019-07-20 15:24:42.334  WARN 2914 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1672fe87] for test method [public void com.thoughtworks.parking_lot.ParkingControllerTest.should_show_limit_15_result_per_page_when_give_pageNum() throws java.lang.Exception] and test instance [com.thoughtworks.parking_lot.ParkingControllerTest@f9919a2]
+
+java.lang.IllegalStateException: The ApplicationContext loaded for [[WebMergedContextConfiguration@8e50104 testClass = ParkingControllerTest, locations = '{}', classes = '{class com.thoughtworks.parking_lot.ParkingLotApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1431b91e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@59474f18, [ImportsContextCustomizer@37e4d7bb key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1573f9fc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e6f74c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4116aac9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]] is not active. This may be due to one of the following reasons: 1) the context was closed programmatically by user code; 2) the context was closed during parallel test execution either according to @DirtiesContext semantics or due to automatic eviction from the ContextCache due to a maximum cache size policy.
+	at org.springframework.util.Assert.state(Assert.java:94) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:112) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener.afterTestMethod(MockRestServiceServerResetTestExecutionListener.java:40) ~[spring-boot-test-autoconfigure-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443) ~[spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+
+2019-07-20 15:25:05.921  INFO 2922 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2922 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:25:05.922  INFO 2922 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:25:05.932 DEBUG 2922 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@638ef7ed
+2019-07-20 15:25:06.563  INFO 2922 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:25:06.618  INFO 2922 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2019-07-20 15:25:07.044  INFO 2922 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5017d3b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:25:07.205  INFO 2922 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:25:07.212  INFO 2922 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:25:07.419  INFO 2922 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:25:07.423  INFO 2922 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:25:07.448  WARN 2922 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:25:07.489  INFO 2922 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.017s)
+2019-07-20 15:25:07.501  INFO 2922 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:25:07.502  INFO 2922 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:25:08.449  INFO 2922 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:25:09.279 DEBUG 2922 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:25:09.606  INFO 2922 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:25:09.621 DEBUG 2922 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:25:09.653  WARN 2922 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:25:09.693 DEBUG 2922 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:25:09.713 DEBUG 2922 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:25:09.725 DEBUG 2922 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:25:10.312  INFO 2922 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:25:10.312  INFO 2922 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:25:10.326  INFO 2922 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:25:10.354  INFO 2922 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 42 ms
+2019-07-20 15:25:10.394  INFO 2922 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 7.818 seconds (JVM running for 8.555)
+2019-07-20 15:25:10.465 DEBUG 2922 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-20 15:25:10.549 DEBUG 2922 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:25:10.550 DEBUG 2922 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=402881e56c0d0d58016c0d0d61f10000, name=8c23, capacity=45, position=biejing12), Parkin (truncated)...]
+2019-07-20 15:25:10.666 DEBUG 2922 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@638ef7ed, started on Sat Jul 20 15:25:05 CST 2019
+2019-07-20 15:25:10.668  INFO 2922 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:25:10.671  INFO 2922 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:25:10.673  INFO 2922 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:25:10.677  INFO 2922 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:25:24.774  INFO 2925 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2925 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:25:24.776  INFO 2925 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:25:24.790 DEBUG 2925 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4a9cc6cb
+2019-07-20 15:25:25.624  INFO 2925 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:25:25.691  INFO 2925 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2019-07-20 15:25:26.189  INFO 2925 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2aaa8249] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:25:26.378  INFO 2925 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:25:26.384  INFO 2925 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:25:26.638  INFO 2925 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:25:26.643  INFO 2925 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:25:26.670  WARN 2925 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:25:26.719  INFO 2925 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.018s)
+2019-07-20 15:25:26.734  INFO 2925 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:25:26.735  INFO 2925 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:25:27.967  INFO 2925 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:25:28.946 DEBUG 2925 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:25:29.385  INFO 2925 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:25:29.406 DEBUG 2925 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:25:29.449  WARN 2925 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:25:29.498 DEBUG 2925 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:25:29.524 DEBUG 2925 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:25:29.537 DEBUG 2925 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:25:30.355  INFO 2925 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:25:30.355  INFO 2925 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:25:30.377  INFO 2925 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:25:30.430  INFO 2925 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 75 ms
+2019-07-20 15:25:30.505  INFO 2925 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 6.122 seconds (JVM running for 7.087)
+2019-07-20 15:25:30.625 DEBUG 2925 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-20 15:25:30.771 DEBUG 2925 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:25:30.772 DEBUG 2925 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=402881e56c0d0d58016c0d0d61f10000, name=8c23, capacity=45, position=biejing12), Parkin (truncated)...]
+2019-07-20 15:25:51.676 DEBUG 2925 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4a9cc6cb, started on Sat Jul 20 15:25:24 CST 2019
+2019-07-20 15:25:51.680  INFO 2925 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:25:51.684  INFO 2925 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:25:51.686  INFO 2925 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:25:51.688  INFO 2925 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:25:56.356  INFO 2930 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2930 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:25:56.358  INFO 2930 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:25:56.372 DEBUG 2930 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf
+2019-07-20 15:25:57.265  INFO 2930 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:25:57.329  INFO 2930 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 2 repository interfaces.
+2019-07-20 15:25:57.770  INFO 2930 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$373d1eed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:25:57.941  INFO 2930 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:25:57.947  INFO 2930 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:25:58.165  INFO 2930 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:25:58.170  INFO 2930 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:25:58.196  WARN 2930 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:25:58.234  INFO 2930 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:25:58.247  INFO 2930 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:25:58.248  INFO 2930 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:25:59.256  INFO 2930 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:26:00.077 DEBUG 2930 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:26:00.410  INFO 2930 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:26:00.427 DEBUG 2930 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:26:00.461  WARN 2930 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:26:00.499 DEBUG 2930 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:26:00.518 DEBUG 2930 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:26:00.529 DEBUG 2930 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:26:01.155  INFO 2930 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:26:01.155  INFO 2930 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:26:01.172  INFO 2930 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:26:01.200  INFO 2930 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 45 ms
+2019-07-20 15:26:01.241  INFO 2930 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 5.307 seconds (JVM running for 6.064)
+2019-07-20 15:26:01.349 DEBUG 2930 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.getDetailInfoById(java.lang.String)
+2019-07-20 15:26:01.426 DEBUG 2930 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:01.427 DEBUG 2930 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=402881e56c0e45ea016c0e45f4540000, name=e0e5, capacity=100, position=chonqing)]
+2019-07-20 15:26:01.516 DEBUG 2930 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf, started on Sat Jul 20 15:25:56 CST 2019
+2019-07-20 15:26:01.519  INFO 2930 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:26:01.522  INFO 2930 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:26:01.524  INFO 2930 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:26:01.526  INFO 2930 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:26:06.635  INFO 2933 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2933 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:26:06.636  INFO 2933 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:26:06.651 DEBUG 2933 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf
+2019-07-20 15:26:07.479  INFO 2933 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:26:07.537  INFO 2933 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
+2019-07-20 15:26:07.946  INFO 2933 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$373d1eed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:26:08.097  INFO 2933 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:26:08.102  INFO 2933 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:26:08.317  INFO 2933 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:26:08.322  INFO 2933 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:26:08.349  WARN 2933 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:26:08.390  INFO 2933 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2019-07-20 15:26:08.403  INFO 2933 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:26:08.403  INFO 2933 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:26:09.516  INFO 2933 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:26:10.317 DEBUG 2933 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:26:10.645  INFO 2933 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:26:10.660 DEBUG 2933 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:26:10.690  WARN 2933 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:26:10.729 DEBUG 2933 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:26:10.748 DEBUG 2933 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:26:10.759 DEBUG 2933 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:26:11.434  INFO 2933 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:26:11.434  INFO 2933 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:26:11.464  INFO 2933 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:26:11.490  INFO 2933 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 56 ms
+2019-07-20 15:26:11.530  INFO 2933 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 5.302 seconds (JVM running for 6.005)
+2019-07-20 15:26:11.634 DEBUG 2933 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.updateCapacity(java.lang.String,java.lang.Integer)
+2019-07-20 15:26:11.725 DEBUG 2933 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:11.726 DEBUG 2933 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=402881e56c0e4612016c0e461c860000, name=a5e4, capacity=111, position=chonqing)]
+2019-07-20 15:26:11.809 DEBUG 2933 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@47c81abf, started on Sat Jul 20 15:26:06 CST 2019
+2019-07-20 15:26:11.812  INFO 2933 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:26:11.816  INFO 2933 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:26:11.818  INFO 2933 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:26:11.819  INFO 2933 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-20 15:26:16.754  INFO 2936 --- [main] c.t.parking_lot.ParkingControllerTest    : Starting ParkingControllerTest on bogon with PID 2936 (started by licankun in /Users/licankun/git-repo/Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-20 15:26:16.755  INFO 2936 --- [main] c.t.parking_lot.ParkingControllerTest    : No active profile set, falling back to default profiles: default
+2019-07-20 15:26:16.771 DEBUG 2936 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@376a0d86
+2019-07-20 15:26:17.587  INFO 2936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-20 15:26:17.643  INFO 2936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 repository interfaces.
+2019-07-20 15:26:18.056  INFO 2936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f1fdeef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-20 15:26:18.220  INFO 2936 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-20 15:26:18.225  INFO 2936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-20 15:26:18.443  INFO 2936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-20 15:26:18.447  INFO 2936 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:file:./h2/test (H2 1.4)
+2019-07-20 15:26:18.470  WARN 2936 --- [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-20 15:26:18.506  INFO 2936 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2019-07-20 15:26:18.518  INFO 2936 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2019-07-20 15:26:18.519  INFO 2936 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-20 15:26:19.487  INFO 2936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:26:20.317 DEBUG 2936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-20 15:26:20.652  INFO 2936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:26:20.671 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-20 15:26:20.708  WARN 2936 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-20 15:26:20.748 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-20 15:26:20.766 DEBUG 2936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-20 15:26:20.777 DEBUG 2936 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-20 15:26:21.423  INFO 2936 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-07-20 15:26:21.423  INFO 2936 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-07-20 15:26:21.437  INFO 2936 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-20 15:26:21.465  INFO 2936 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 41 ms
+2019-07-20 15:26:21.504  INFO 2936 --- [main] c.t.parking_lot.ParkingControllerTest    : Started ParkingControllerTest in 5.14 seconds (JVM running for 5.858)
+2019-07-20 15:26:21.571 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.entity.Parkinglot> com.thoughtworks.parking_lot.controller.ParkController.findAll(java.lang.Integer,java.lang.Integer)
+2019-07-20 15:26:21.651 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:21.652 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Parkinglot(id=402881e56c0d0d58016c0d0d61f10000, name=8c23, capacity=45, position=biejing12), Parkin (truncated)...]
+2019-07-20 15:26:21.769 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.addParkinglot(com.thoughtworks.parking_lot.entity.Parkinglot)
+2019-07-20 15:26:21.802 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Parkinglot(id=null, name=d96f, capacity=45, position=biejing12)]
+2019-07-20 15:26:21.826 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:21.826 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=402881e56c0e4639016c0e4644700000, name=d96f, capacity=45, position=biejing12)]
+2019-07-20 15:26:21.854 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.getDetailInfoById(java.lang.String)
+2019-07-20 15:26:21.858 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:21.858 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=402881e56c0e4639016c0e46449b0001, name=0a65, capacity=100, position=chonqing)]
+2019-07-20 15:26:21.865 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.thoughtworks.parking_lot.controller.ParkController.deleteParkinglot(java.lang.String)
+2019-07-20 15:26:21.878 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:21.878 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing ["OK"]
+2019-07-20 15:26:21.885 DEBUG 2936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.entity.Parkinglot com.thoughtworks.parking_lot.controller.ParkController.updateCapacity(java.lang.String,java.lang.Integer)
+2019-07-20 15:26:21.905 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-07-20 15:26:21.905 DEBUG 2936 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Parkinglot(id=402881e56c0e4639016c0e4644bb0003, name=8646, capacity=111, position=chonqing)]
+2019-07-20 15:26:21.910 DEBUG 2936 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@376a0d86, started on Sat Jul 20 15:26:16 CST 2019
+2019-07-20 15:26:21.913  INFO 2936 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-20 15:26:21.916  INFO 2936 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-20 15:26:21.918  INFO 2936 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-20 15:26:21.920  INFO 2936 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -39,4 +39,8 @@ public class Order {
     @Column
     private String status = "ON";
 
+    public Order(@NotNull(message = "停车场名字不能为空") String lotName, @NotEmpty(message = "车牌号不能为空") String carNumber) {
+        this.lotName = lotName;
+        this.carNumber = carNumber;
+    }
 }

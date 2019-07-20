@@ -10,7 +10,6 @@ import com.thoughtworks.parking_lot.repo.ParkinglotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -36,7 +35,7 @@ public class OrderService {
                 .build();
         List<Order> all = orderRepository.findAll(specification);
         System.out.println(all.size());
-        if (all.size() >  parkinglot.getCapacity()){
+        if (all.size() >=  parkinglot.getCapacity()){
             throw new ParkingLotException("没有足够停车位");
         }
         return orderRepository.save(order);
