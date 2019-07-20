@@ -3,6 +3,7 @@ package com.thoughtworks.parking_lot.entity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -32,6 +33,7 @@ public class Order {
     private Date createTime = new Date();
 
     @Column(name = "end_time")
+    @LastModifiedDate
     private Date endTime;
 
     @Column

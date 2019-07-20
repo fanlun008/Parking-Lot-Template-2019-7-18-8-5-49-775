@@ -46,4 +46,10 @@ public class OrderController {
         return apiResponse;
     }
 
+    @PutMapping("/{id}")
+    public ApiResponse closeOrder(@PathVariable("id")String id) {
+        String msg = orderService.closeOrder(id);
+        return ApiResponse.ofMsg(HttpStatus.OK.value(), msg);
+    }
+
 }

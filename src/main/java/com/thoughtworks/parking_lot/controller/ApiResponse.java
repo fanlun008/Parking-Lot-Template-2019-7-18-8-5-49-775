@@ -11,4 +11,13 @@ public class ApiResponse {
     private String msg;
     private Object result;
 
+    public static ApiResponse ofMsg(Integer code, String msg) {
+        return new ApiResponse(code, msg, null);
+    }
+
+    public ApiResponse(Integer code, String msg, Object result) {
+        this.code = code;
+        this.msg = msg;
+        this.result = result;
+    }
 }
