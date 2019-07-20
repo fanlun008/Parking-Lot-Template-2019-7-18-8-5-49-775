@@ -1,6 +1,8 @@
 package com.thoughtworks.parking_lot.service;
 
 import com.google.common.collect.Lists;
+import com.thoughtworks.parking_lot.ParkingLotException;
+import com.thoughtworks.parking_lot.entity.Order;
 import com.thoughtworks.parking_lot.entity.Parkinglot;
 import com.thoughtworks.parking_lot.repo.ParkinglotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +52,18 @@ public class ParkingService {
     @Transactional
     public void updateCapacityById(String id, Integer capacity) {
         parkinglotRepository.updateCapacity(id, capacity);
+    }
+
+    public Integer getCapacityByLotName(String lotName){
+        Parkinglot findLot = parkinglotRepository.findByName(lotName);
+        if (findLot == null) {
+            throw new ParkingLotException("没有此停车场");
+        }
+        Integer capacity = parkinglotRepository.getCapacityByLotName(lotName);
+        if (capacity == null || capacity == 0) {
+            throw new ParkingLotException("没有停车位");
+        }
+        return capacity;
     }
 
 

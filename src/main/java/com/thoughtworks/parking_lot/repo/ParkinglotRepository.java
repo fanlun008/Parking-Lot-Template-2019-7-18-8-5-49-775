@@ -21,4 +21,7 @@ public interface ParkinglotRepository extends PagingAndSortingRepository<Parking
     @Modifying
     @Query("update Parkinglot as parkinglot set parkinglot.capacity = :cap where parkinglot.id = :id")
     void updateCapacity(@Param(value = "id") String id, @Param(value = "cap") Integer cap);
+
+    @Query("select capacity from Parkinglot as parkinglot where parkinglot.name = :name")
+    Integer getCapacityByLotName(@Param(value = "name")String name);
 }

@@ -26,9 +26,9 @@ public class ParkController {
         return parkingService.deleteParkinglot(id);
     }
 
-    @GetMapping(params = {"page"})
-    public List<Parkinglot> findAll(@RequestParam("page")Integer page){
-        List<Parkinglot> all = parkingService.findAll(page-1, 15);
+    @GetMapping(params = {"page", "pageSize"})
+    public List<Parkinglot> findAll(@RequestParam("page")Integer page, @RequestParam(value = "pageSize", defaultValue = "15", required = false)Integer pageSize){
+        List<Parkinglot> all = parkingService.findAll(page-1, pageSize);
         return all;
     }
 

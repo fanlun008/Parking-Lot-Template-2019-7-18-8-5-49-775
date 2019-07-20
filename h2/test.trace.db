@@ -1,0 +1,3 @@
+2019-07-20 10:58:31 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO T_ORDER() [*]"; expected "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, FROM, TABLE, VALUES"; SQL statement:
+insert into t_order() [42001-199]

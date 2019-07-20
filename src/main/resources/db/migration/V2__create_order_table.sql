@@ -1,0 +1,8 @@
+CREATE TABLE t_order (
+  id VARCHAR PRIMARY KEY,
+  lot_name VARCHAR NOT NULL,
+  car_number VARCHAR NOT NULL,
+  create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+  end_time DATETIME,
+  status VARCHAR DEFAULT 'ON'
+);
